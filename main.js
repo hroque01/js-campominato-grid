@@ -27,7 +27,13 @@ if ( tendina.value === "pro") {
 
 for (let i = 1; i < valX; i++) {
 
+    
+    
     btn.addEventListener("click",
+
+        function () {
+            container.innerHTML = "";
+        }
 
         function (){
 
@@ -56,7 +62,7 @@ for (let i = 1; i < valX; i++) {
         
         
         };
-    })
+    });
     
 };
 
