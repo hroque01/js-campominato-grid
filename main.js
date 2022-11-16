@@ -2,21 +2,33 @@
 // dichiaro il contenitore
 const container = document.querySelector(".grid_container")
 
+// dichiaro il pulsante
+const btn = document.querySelector(".btn")
+
+
 // creo la griglia con un ciclo
 
 for ( i = 1; i < 100; i++ ) {
 
-    let nuovoElemento = createBox();
+    btn.addEventListener("click",
 
-    nuovoElemento.addEventListener("click",
+        function (){
+            let nuovoElemento = createBox();
+            nuovoElemento.addEventListener("click",
 
-        function () {
-            nuovoElemento.classList.toggle("clicked");
-        }
+            function () {
+                nuovoElemento.classList.toggle("clicked");
+            }
+        
+        )
+
+        container.appendChild(nuovoElemento)
+    })
     
-    )
+
+   
+
     
-    container.appendChild(nuovoElemento);
 
     
 };
