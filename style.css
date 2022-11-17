@@ -13,8 +13,9 @@ main {
 }
 
 .grid_container {
-    margin: 0px 700px;
-    padding: 100px 0;
+    width: 50%;
+    height: 85vh;
+    margin: 0 auto;
 }
 
 .box {
@@ -32,10 +33,12 @@ main {
     background-color: yellow;
 }
 
-@media all and (max-width: 1200px) {
-
-    .grid_container {
-        margin: 0px 350px;
-        padding: 100px 0;
-    }
+.width-easy{
+    width: calc(100% / 10);
+}
+.width-mid{
+    width: calc(100% / 9);
+}
+.width-hard{
+    width: calc(100% / 7);
 }
